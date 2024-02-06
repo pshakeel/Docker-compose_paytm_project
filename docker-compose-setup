@@ -1,0 +1,21 @@
+
+## docker installation
+   yum install docker -y
+   systemctl start docker
+   systemctl status docker
+
+## docker-compose install :- Docker-compose is an tool of docker docker-compose require saperate installation.
+
+   sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+
+##  NOTE: to get the latest version
+    sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+
+##  Fix permissions after download:
+sudo chmod +x /usr/local/bin/docker-compose
+
+## Docker Compose is installed in a different location: The error message specifies the path
+  /usr/local/bin/docker-compose up
+
+  
+  

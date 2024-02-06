@@ -1,0 +1,20 @@
+The error message "services must be a mapping" is a common error in Docker Compose. 
+It occurs when the services section of your docker-compose.yml file is not formatted correctly.
+
+services:
+  movies:
+    image: shakeelp/paytmmovies:latest
+    ports:
+      - "81:80"
+  train:
+    image: shakeelp/paytmtrain:latest
+    ports:
+      - "82:80"
+  dth:
+    image: shakeelp/paytm_dth:latest
+    ports:
+      - "83:80"
+  recharge:
+    image: shakeelp/paytm_recharge:latest
+    ports:
+      - "84:80"
